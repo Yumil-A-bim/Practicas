@@ -1,0 +1,212 @@
+/* Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos */
+/* example: */
+
+h1 {
+    color: blue;
+  }
+
+/* *SELECTORES  */
+
+/* En CSS los selectores se utilizan para delimitar los elementos HTML de nuestra página web */
+
+/* h1 {
+    color: red;
+  }
+  
+  .special {
+    color: green;
+  }  */
+
+
+/* ^Combinacion de selectores */
+
+/* h1,
+.special {
+  color: rgb(21, 255, 0);
+}
+
+h1+
+.special {
+  color: rgb(255, 0, 0);
+} */
+
+/* *SELECTORES DE: Tipo, de clase y de ID */
+
+/* delimitar elemento HTML 
+
+    , main, li, .... {
+        Property: value;
+    }
+
+    delimitan una clase:
+
+    .box {
+    
+    }
+
+    #unique {
+    
+    }
+
+*/
+#RR{
+    border: 1px solid #e01d1d;
+}
+
+/* *SELECTORES DE: ATRIBUTO 
+
+    a[title] {
+
+    }
+
+    VALOR PARTICULAR:
+
+    a[href="https://example.com"]
+    {
+    }
+
+
+*/
+
+    a[href="https://example.com"]
+    {
+        color:black;
+    }
+
+    
+    a[title] {
+        background-color: aqua !important;
+        cursor:cell;
+    }
+
+    a{
+        font-size: 60px;
+        background-color: rgb(30, 46, 46);
+
+    }
+/* * Las pseudoclases y los pseudoelementos:
+Este grupo de selectores incluye pseudoclases, que aplican estilo a ciertos estados de un elemento.
+
+    a: hover {
+
+    }
+    
+    También incluye pseudoelementos, que seleccionan una parte determinada de un elemento en vez del elemento en sí.
+    p::first-line {
+    
+    }
+
+
+*/
+
+a:hover {
+    background-color: rgb(245, 13, 187);
+
+}
+
+/* p::first-line {
+    background-color: rgb(245, 13, 187);
+    
+} */
+
+
+p:first-child{
+    background-color: rgb(34, 28, 32);
+
+}
+
+
+/* * Combinadores 
+
+    El ejemplo siguiente selecciona los párrafos que son hijos directos del elemento <article> utilizando el operador de combinación hijo (>):
+
+    article > p {
+    }
+
+*/
+article > p {
+    background-color: rgb(40, 36, 49);
+}
+
+
+/* !EJERCICIO 1 */
+
+
+
+
+p
+{
+    font-size: 30px;
+    color:rgb(16, 255, 8);
+}
+
+p
+{
+    color:rgb(93, 6, 255);
+}
+
+#R1{
+  background-color: #e01d1d;
+  color:black;
+}
+
+.RR{
+  background-color: blue;
+  color:aqua;
+}
+
+/* * RULES */
+/* ^Cascada  */
+/* ^Especificidad */
+
+/* 
+.main-heading {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+<h1 class="main-heading">This is my heading.</h1>
+
+*/
+/* ^Herencia */
+
+/* 
+body {
+  color: blue;
+}
+
+span {
+  color: black;
+}
+
+<p>As the body has been set to have a color of blue this is inherited through the descendants.</p>
+<p>We can change the color by targeting the element with a selector, such as this <span>span</span>.</p>
+
+
+ *dos:
+
+  
+
+
+ 
+*/
+/*  */
+/*  */
+/*  */
+/*  */
+
+.special {
+  color: black;
+  font-weight: bold;
+}
+
+.main {
+  color: rebeccapurple;
+  border: 2px solid #ccc;
+  padding: 1em;
+  font-size: 45px;
+}
+
